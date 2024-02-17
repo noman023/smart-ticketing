@@ -28,6 +28,7 @@
           extend: {
             colors: {
               primary: "rgb(29,209,0)",
+              secondary: "rgb(3,7,18)",
             },
           },
         },
@@ -74,7 +75,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="text-black text-4xl font-extrabold">P-Ticket</a>
+            <a class="text-secondary text-4xl font-extrabold">P-Ticket</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-[18px]">
@@ -116,7 +117,7 @@
               quickly and without any extra hassle.
             </p>
             <button
-              class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold"
+              class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold text-secondary"
             >
               Get Started
             </button>
@@ -125,6 +126,70 @@
       </section>
 
       <!-- banner section end -->
+
+      <!-- coupon section start -->
+      <section class="my-[120px] text-center">
+        <h2 class="text-[40px] font-bold text-secondary">
+          Best offers for you
+        </h2>
+
+        <div class="flex flex-col gap-5 lg:flex-row lg:justify-between my-12">
+          <!-- card 1 -->
+          <div
+            class="w-[573px] bg-base-100 shadow-xl text-secondary bg-[rgb(255,191,15)] flex rounded-3xl text-left"
+          >
+            <div class="basis-[60%] flex flex-col items-center justify-center">
+              <div class="space-y-2">
+                <h2 class="card-title text-[40px] font-black">15% OFF</h2>
+                <p class="text-xl font-semibold">on your next purchase</p>
+                <p class="text-lg font-medium opacity-80">
+                  use by january 2024
+                </p>
+              </div>
+            </div>
+
+            <div><img src="./images/cupon-devider.png" alt="" /></div>
+
+            <div class="flex flex-col items-center justify-center">
+              <div class="">
+                <h2 class="card-title text-3xl font-bold">NEW15</h2>
+                <p class="text-lg font-medium opacity-80">coupon code</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="w-[573px] bg-base-100 shadow-xl text-secondary bg-[rgb(247,140,156)] flex rounded-3xl text-left"
+          >
+            <div class="basis-[60%] flex flex-col items-center justify-center">
+              <div class="space-y-2">
+                <h2 class="card-title text-[40px] font-black">20% OFF</h2>
+                <p class="text-xl font-semibold">on your next purchase</p>
+                <p class="text-lg font-medium opacity-80">
+                  use by january 2024
+                </p>
+              </div>
+            </div>
+
+            <div><img src="./images/cupon-devider.png" alt="" /></div>
+
+            <div class="flex flex-col items-center justify-center">
+              <div class="">
+                <h2 class="card-title text-3xl font-bold">couple20</h2>
+                <p class="text-lg font-medium opacity-80">coupon code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-outline border-primary text-primary text-lg font-bold hover:bg-green-600 hover:border-primary"
+        >
+          Success
+        </button>
+      </section>
+      <!-- coupon section end -->
     </main>
     <footer></footer>
   </body>
