@@ -41,8 +41,8 @@
       }
     </style>
   </head>
-  <body class="max-w-[1170px] mx-auto">
-    <header class="my-10">
+  <body>
+    <header class="my-10 max-w-[1170px] mx-auto">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -98,7 +98,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="max-w-[1170px] mx-auto">
       <!-- banner section start -->
 
       <section
@@ -193,9 +193,15 @@
         </button>
       </section>
       <!-- coupon section end -->
+    </main>
 
-      <!-- bus info start -->
-      <section id="bus-info" class="p-5">
+    <!-- bus info start -->
+    <section
+      id="bus-info"
+      class="p-5 bg-[rgb(247,248,248)] border-t-2 border-[rgb(29,209,0)] rounded-t-[88px]"
+    >
+      <!-- container  -->
+      <div class="max-w-[1170px] mx-auto">
         <div class="w-3/4 mx-auto text-center">
           <h2 class="text-3xl font-bold text-secondary">P.H Paribahan</h2>
           <p class="text-lg font-normal text-[rgba(3,7,18,0.6)] my-6">
@@ -719,9 +725,10 @@
             </dialog>
           </div>
         </div>
-      </section>
-      <!-- bus info end -->
-    </main>
+      </div>
+    </section>
+    <!-- bus info end -->
+
     <footer></footer>
   </body>
 </html>
