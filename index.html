@@ -116,11 +116,14 @@
               Travel with us to your dream destination with more comfort,
               quickly and without any extra hassle.
             </p>
-            <button
-              class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold text-secondary"
-            >
-              Get Started
-            </button>
+
+            <a href="#bus-info">
+              <button
+                class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold text-secondary"
+              >
+                Get Started
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -186,10 +189,266 @@
         <button
           class="btn btn-outline border-primary text-primary text-lg font-bold hover:bg-green-600 hover:border-primary"
         >
-          Success
+          See All Offers
         </button>
       </section>
       <!-- coupon section end -->
+
+      <!-- bus info start -->
+      <section id="bus-info" class="p-5">
+        <div class="w-3/4 mx-auto text-center">
+          <h2 class="text-3xl font-bold text-secondary">P.H Paribahan</h2>
+          <p class="text-lg font-normal text-[rgba(3,7,18,0.6)] my-6">
+            Below you will find details about our bus, departure time,
+            destination and ticket price. Book your favorite seat position
+            below.
+          </p>
+        </div>
+
+        <!-- bus time and ticket price -->
+        <div class="bg-white flex flex-col lg:flex-row rounded-3xl">
+          <div class="basis-[70%] p-5">
+            <div class="flex justify-between">
+              <div class="flex">
+                <img src="./images/bus-logo.png" alt="" />
+
+                <div class="ml-3">
+                  <h2 class="text-secondary text-3xl font-bold">
+                    Greenline Paribahan
+                  </h2>
+                  <p class="text-lg">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+
+              <div
+                class="w-44 h-14 bg-[rgba(29,209,0,0.15)] flex items-center justify-center rounded-xl"
+              >
+                <img src="./images/seat-green.png" alt="" />
+                <p class="text-primary text-lg font-medium ml-2">
+                  40 Seat left
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-[rgb(247,248,248)] rounded-3xl p-8 mt-5">
+              <div
+                class="border-b-2 border-dashed mb-5 pb-5 flex justify-between"
+              >
+                <p>Route</p>
+                <p class="text-lg text-secondary font-semibold">Dhaka-Sylhet</p>
+              </div>
+
+              <div
+                class="border-b-2 border-dashed mb-5 pb-5 flex justify-between"
+              >
+                <p>Departure Time</p>
+                <p class="text-lg text-secondary font-semibold">9:00 PM</p>
+              </div>
+
+              <div class="flex justify-around">
+                <div class="bg-[rgba(3,7,18,0.05)] rounded-xl p-5">
+                  <p>Boarding Point - Laxmipur</p>
+                </div>
+
+                <div class="bg-[rgba(3,7,18,0.05)] rounded-xl p-5">
+                  <p>Dropping Point - Bogura</p>
+                </div>
+
+                <div class="bg-[rgba(3,7,18,0.05)] rounded-xl p-5">
+                  <p>Est. Time - 11 Hour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <img src="./images/info-devider.png" alt="" />
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <img src="./images/fare.png" alt="" />
+            <p class="text-3xl text-secondary font-bold">550 Taka</p>
+            <p class="text-2xl font-semibold text-secondary">Per Seat</p>
+          </div>
+        </div>
+        <!-- bus time and ticket price end -->
+
+        <!-- bus seat and form -->
+        <div
+          class="bg-white rounded-3xl p-8 mt-6 flex flex-col gap-5 lg:flex-row"
+        >
+          <!-- seats part -->
+          <div class="lg:border-r-2 border-dashed pr-5">
+            <div>
+              <h3
+                class="text-2xl text-secondary font-semibold border-b-2 border-dashed pb-5"
+              >
+                Select Your Seat
+              </h3>
+
+              <div
+                class="flex justify-between my-5 pb-5 border-b-2 border-dashed"
+              >
+                <div class="flex justify-between">
+                  <img src="./images/seat-gray.png" alt="" />
+                  <p class="text-lg font-medium ml-2">Available</p>
+                </div>
+
+                <div class="flex justify-between">
+                  <img src="./images/seat-green-filled.png" alt="" />
+                  <p class="text-primary text-lg font-medium ml-2">Selected</p>
+                </div>
+              </div>
+
+              <div class="flex justify-end">
+                <div class="w-28 h-14 bg-gray-300 rounded-xl"></div>
+              </div>
+            </div>
+
+            <!-- all seats -->
+            <div class="grid grid-cols-5 gap-5 mt-6">
+              <p>A</p>
+              <p
+                id="A1"
+                class="h-14 bg-gray-200 rounded-xl flex justify-center items-center cursor-pointer"
+              >
+                A1
+              </p>
+
+              <p
+                id="A2"
+                class="max-w-28 h-14 bg-gray-200 rounded-xl flex justify-center items-center cursor-pointer"
+              >
+                A2
+              </p>
+
+              <p
+                id="A3"
+                class="max-w-28h-14 bg-gray-200 rounded-xl flex justify-center items-center cursor-pointer"
+              >
+                A3
+              </p>
+
+              <p
+                id="A4"
+                class="max-w-28 h-14 bg-gray-200 rounded-xl flex justify-center items-center cursor-pointer"
+              >
+                A4
+              </p>
+
+              <p>B</p>
+              <p
+                id="B1"
+                class="w-28 h-14 bg-gray-200 rounded-xl flex justify-center items-center cursor-pointer"
+              >
+                B1
+              </p>
+            </div>
+          </div>
+
+          <!-- form part -->
+          <div class="flex-auto">
+            <h3
+              class="text-2xl text-secondary font-semibold border-b-2 border-dashed pb-5 mb-5"
+            >
+              Your Selected Seat
+            </h3>
+
+            <!-- table data -->
+            <div class="overflow-x-auto bg-[rgb(247,248,248)] rounded-xl p-5">
+              <table class="table border-b-2">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Seat</th>
+                    <th>Class</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr>
+                    <td>A1</td>
+                    <td>Economoy</td>
+                    <td>550</td>
+                  </tr>
+
+                  <tr>
+                    <td>B1</td>
+                    <td>Economoy</td>
+                    <td>550</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="flex justify-between my-5 text-secondary">
+                <p class="font-medium">Total Price</p>
+                <p class="font-medium">BDT 500</p>
+              </div>
+
+              <div>
+                <input type="text" placeholder="Have any copupon?" />
+                <button
+                  class="btn bg-primary text-white font-semibold hover:bg-green-400"
+                >
+                  Apply
+                </button>
+              </div>
+
+              <div class="flex justify-between my-5 text-secondary">
+                <p class="font-medium">Grand Total</p>
+                <p class="font-medium">BDT 500</p>
+              </div>
+            </div>
+
+            <!-- form -->
+            <form class="mt-6 space-y-4">
+              <div>
+                <label for="" class="text-secondary font-semibold"
+                  >Passenger Name*</label
+                >
+                <br />
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full"
+                />
+              </div>
+
+              <div>
+                <label for="" class="text-secondary font-semibold"
+                  >Phone Number*</label
+                >
+                <br />
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full"
+                />
+              </div>
+
+              <div>
+                <label for="" class="text-secondary font-semibold"
+                  >Email ID*</label
+                >
+                <br />
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full"
+                />
+              </div>
+            </form>
+
+            <button
+              class="btn mt-5 w-full bg-primary text-white text-xl font-extrabold hover:bg-green-400"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- bus info end -->
     </main>
     <footer></footer>
   </body>
