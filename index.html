@@ -231,7 +231,7 @@
               >
                 <img src="./images/seat-green.png" alt="" />
                 <p class="text-primary text-lg font-medium ml-2">
-                  40 Seat left
+                  <span id="total-seat-count">40</span> Seat left
                 </p>
               </div>
             </div>
@@ -312,7 +312,7 @@
             </div>
 
             <!-- all seats -->
-            <div class="grid grid-cols-5 gap-5 mt-6">
+            <div id="seat-parent" class="grid grid-cols-5 gap-5 mt-6">
               <p>A</p>
               <p
                 id="A1"
@@ -606,7 +606,7 @@
                     <th>Price</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
                   <!-- row 1 -->
                   <tr>
                     <td>A1</td>
@@ -624,7 +624,7 @@
 
               <div class="flex justify-between my-5 text-secondary">
                 <p class="font-medium">Total Price</p>
-                <p class="font-medium">BDT 500</p>
+                <p id="total-price" class="font-medium">BDT 500</p>
               </div>
 
               <div>
@@ -735,5 +735,6 @@
     <!-- bus info end -->
 
     <footer></footer>
+    <script src="./main.js"></script>
   </body>
 </html>
