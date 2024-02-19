@@ -39,6 +39,10 @@
       body {
         font-family: "Raleway", sans-serif;
       }
+
+      .arial-font {
+        font-family: "Arial", sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -101,29 +105,75 @@
     <main class="max-w-[1170px] mx-auto">
       <!-- banner section start -->
 
-      <section
-        class="hero rounded-3xl"
-        style="background-image: url(./images/banner.png)"
-      >
-        <div class="hero-overlay bg-opacity-20 rounded-3xl"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-2xl">
-            <h1 class="mb-5 mt-16 text-6xl font-extrabold text-white">
-              End-to-End Travel with <br />
-              <span class="text-primary">PH Paribahan</span>
-            </h1>
-            <p class="mb-5 text-white text-lg">
-              Travel with us to your dream destination with more comfort,
-              quickly and without any extra hassle.
-            </p>
+      <section class="lg:relative">
+        <div
+          class="hero rounded-3xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-20 rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl">
+              <h1 class="mb-5 mt-16 text-6xl font-extrabold text-white">
+                End-to-End Travel with <br />
+                <span class="text-primary">PH Paribahan</span>
+              </h1>
+              <p class="mb-5 text-white text-lg">
+                Travel with us to your dream destination with more comfort,
+                quickly and without any extra hassle.
+              </p>
 
-            <a href="#bus-info">
-              <button
-                class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold text-secondary"
-              >
-                Get Started
-              </button>
-            </a>
+              <a href="#bus-info">
+                <button
+                  class="btn bg-primary border-[rgba(29,209,0,0.4)] hover:bg-green-400 hover:border-[rgba(29,209,0,0.4)] mb-40 text-lg font-bold text-secondary"
+                >
+                  Get Started
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- stats -->
+        <div
+          class="w-full flex flex-col mt-4 gap-7 lg:flex-row items-center justify-center lg:absolute -bottom-14 arial-font"
+        >
+          <div
+            class="w-72 bg-white flex gap-2 rounded-2xl border-b-2 border-primary p-5 drop-shadow"
+          >
+            <div>
+              <img src="./images/people.png" alt="" />
+            </div>
+
+            <div>
+              <h1 class="text-secondary text-4xl font-bold mb-2">500K+</h1>
+              <p>Registered Users</p>
+            </div>
+          </div>
+
+          <div
+            class="w-72 bg-white flex gap-2 rounded-2xl border-b-2 border-primary p-5 drop-shadow"
+          >
+            <div>
+              <img src="./images/ticket-cupon.png" alt="" />
+            </div>
+
+            <div>
+              <h1 class="text-secondary text-4xl font-bold mb-2">1.7 Lacks</h1>
+              <p>Tickets Sold</p>
+            </div>
+          </div>
+
+          <div
+            class="w-72 bg-white flex gap-2 rounded-2xl border-b-2 border-primary p-5 drop-shadow"
+          >
+            <div>
+              <img src="./images/stoppage.png" alt="" />
+            </div>
+
+            <div>
+              <h1 class="text-secondary text-4xl font-bold mb-2">80K+</h1>
+              <p>Rental Partners</p>
+            </div>
           </div>
         </div>
       </section>
@@ -131,7 +181,7 @@
       <!-- banner section end -->
 
       <!-- coupon section start -->
-      <section class="my-[120px] text-center">
+      <section class="my-[120px] text-center arial-font">
         <h2 class="text-[40px] font-bold text-secondary">
           Best offers for you
         </h2>
@@ -281,7 +331,7 @@
 
         <!-- bus seat and form -->
         <div
-          class="bg-white rounded-3xl p-8 mt-6 flex flex-col gap-5 lg:flex-row"
+          class="bg-white rounded-3xl p-8 mt-6 flex flex-col gap-5 lg:flex-row arial-font"
         >
           <!-- seats part -->
           <div class="lg:border-r-2 border-dashed pr-5">
