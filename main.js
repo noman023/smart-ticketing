@@ -11,6 +11,9 @@ let calculatedTotalPrice = 0;
 const discountInput = document.getElementById("discount-input");
 const discountButton = document.getElementById("discount-btn");
 
+const tableSeatCount = document.getElementById("seat-count");
+const phoneInput = document.getElementById("phone-input");
+
 for (let i = 0; i < allSeats.length; i++) {
   addClickEvent(allSeats[i]);
 }
@@ -22,6 +25,9 @@ function addClickEvent(element) {
       alert("you can not choose more than 4 seats.");
       return;
     }
+
+    // update seat count on the table
+    tableSeatCount.innerText = selectedSeatCount;
 
     // update total price
     calculatedTotalPrice += 550;
@@ -82,4 +88,11 @@ discountButton.addEventListener("click", function () {
   }
 
   document.getElementById("discount-div").style.display = "none";
+});
+
+phoneInput.addEventListener("keyup", function (e) {
+  if (e.target.value.length > 0 && selectedSeatCount > 0) {
+    const btn = document.getElementById("next-btn");
+    btn.removeAttribute("disabled");
+  }
 });
