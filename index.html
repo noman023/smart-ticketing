@@ -607,33 +607,24 @@
                   </tr>
                 </thead>
                 <tbody id="table-body">
-                  <!-- row 1 -->
-                  <tr>
-                    <td>A1</td>
-                    <td>Economoy</td>
-                    <td>550</td>
-                  </tr>
-
-                  <tr>
-                    <td>B1</td>
-                    <td>Economoy</td>
-                    <td>550</td>
-                  </tr>
+                  <!-- will be dinamically added -->
                 </tbody>
               </table>
 
               <div class="flex justify-between my-5 text-secondary">
                 <p class="font-medium">Total Price</p>
-                <p id="total-price" class="font-medium">BDT 500</p>
+                <p class="font-medium">BDT <span id="total-price">0</span></p>
               </div>
 
-              <div>
+              <div id="discount-div">
                 <input
+                  id="discount-input"
                   class="px-8 py-3 rounded-xl"
                   type="text"
                   placeholder="Have any copupon?"
                 />
                 <button
+                  id="discount-btn"
                   class="btn bg-primary text-white font-semibold hover:bg-green-400"
                 >
                   Apply
@@ -642,7 +633,7 @@
 
               <div class="flex justify-between my-5 text-secondary">
                 <p class="font-medium">Grand Total</p>
-                <p class="font-medium">BDT 500</p>
+                <p class="font-medium">BDT <span id="grand-total">0</span></p>
               </div>
             </div>
 
